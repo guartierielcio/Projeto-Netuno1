@@ -18,8 +18,8 @@
         body {
             font-family: 'Noto Sans', sans-serif;
             background: linear-gradient(to bottom, #1A7FBD, #A4DCFF ); 
-            margin: 0;
-            padding: 0;
+            margin: 15px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items:center; 
@@ -28,12 +28,16 @@
         header {
             background-color: linear-gradient(to bottom #1A7FBD, #A4DCFF); 
             color: #FFF;
-            padding: 20px;
+            padding: 0px;
             display: flex;
             justify-content: space-between; 
-            align-items: center;
+            align-items:center;
             width: 100%;
             max-width: 1200px; 
+        }
+
+        h1{
+            text-align: center;
         }
 
         .logo {
@@ -41,19 +45,25 @@
             margin-right: 20px; 
         }
 
+        image banner{
+            text-align: right;
+            padding: 10px;
+        }
+
         nav ul {
             display: flex; 
             list-style-type: none;
             padding: 0;
             margin: 0;
+            margin-right: 150px; /* Ajuste da margem direita para mover o header para a direita */
         }
 
         nav ul li {
-            margin-right: 20px;
+            margin-right: 50px;
         }
 
         nav ul li:last-child {
-            margin-right: 100px; /* Aumentar a margem direita para afastar o botão "Processo Seletivo" */
+            margin-right: 100px; 
         }
 
         nav ul li a {
@@ -97,10 +107,20 @@
             color: white;
         }
 
+        h2{
+            color: #1A7FBD;
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
         section {
             margin-bottom: 20px;
             width: 50%;
         }
+        
 
         footer {
             background-color: #1A7FBD;
@@ -158,6 +178,13 @@
             margin-right: 5px;
         }
 
+        /* Estilo para o traço contínuo branco */
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid white;
+            margin-bottom: 20px; 
+        }
+
     </style>
 </head>
 <body>
@@ -176,27 +203,30 @@
         </h1>
     </header>
 
+    <!-- Traço contínuo branco -->
+    <div class="divider"></div>
+
     <main>
         <div>
             <p class="vertical-text"></p>
         </div>
         <section style="display: flex; flex-direction: column; align-items: center;">
-            <img src="../bannertopo.png" alt="Banner" style="width: 1440px; height: 1172px;"> 
+            <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px;"> 
         </section>
 
         <section style="display: flex; flex-direction: column; align-items: center;">
-           
+            
             <form>
+                <h2>Formulário de Cadastro</h2>
+                <p>Preencha seus dados*:</p>
                 <p>
-                    <h2>Formulário de Cadastro</h2>
-                    
                     <img src="../icones/user.png" alt="Ícone user" style ="width: 15px;">
-                    <input type="text" name="nome" id="inome" required maxlength="60" placeholder="Nome Completo*" autocomplete="name" required>
+                    <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Nome Completo*" autocomplete="name" required>
                 </p>
                 
                 <p>
                     <img src="../icones/mail.png" alt="Ícone e-mail" style ="width: 15px;">
-                    <input type="text" id="iemail" name="email" required maxlength="60" placeholder="e-mail*">
+                    <input type="text" id="iemail" name="email" required maxlength="100" placeholder="e-mail*">
                 </p>
                     
                 <p>
@@ -231,55 +261,53 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select><br>
-                </p>
-            
-
-                <p>Conhecimento em Programação*</p>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="ihtml" name="html">
-                    <label for="ihtml">HTML</label>
-                    <input type="checkbox" id="icss" name="css">
-                    <label for="icss">CSS</label>
-                    <input type="checkbox" id="ijavascript" name="javascript">
-                    <label for="ijavascript">JavaScript</label>
-                    <input type="checkbox" id="iphp" name="php">
-                    <label for="iphp">PHP</label>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="i.net" name=".net">
-                    <label for="i.net">.NET</label>
-                    <input type="checkbox" id="ivue.js" name="vue.js">
-                    <label for="ivue.js">Vue.JS</label>
-                    <input type="checkbox" id=".reactjs" name="reactjs">
-                    <label for="ireactjs">ReactJS</label>
-                    <input type="checkbox" id="ireactnative" name="reactnative">
-                    <label for="ireactnative">React Native</label>
-                </div>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="inode" name="node">
-                    <label for="inode">Node</label>
-                    <input type="checkbox" id="ipython" name="python">
-                    <label for="ipython">Python</label>
-                    <input type="checkbox" id="iflutter" name="flutter">
-                    <label for="ifluter">Flutter</label>
-                    <input type="checkbox" id="ioutras" name="outras">
-                    <label for="iioutras">Outras</label>
-                </div>
-                               
-                <button>Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <main>
-        <img src="../dev.png" alt="Banner" style="width: 450px; height: 500px;">
-    </main>
-
+                    
+                    <p>Conhecimento em Programação*</p>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="ihtml" name="html">
+                        <label for="ihtml">HTML</label>
+                        <input type="checkbox" id="icss" name="css">
+                        <label for="icss">CSS</label>
+                        <input type="checkbox" id="ijavascript" name="javascript">
+                        <label for="ijavascript">JavaScript</label>
+                        <input type="checkbox" id="iphp" name="php">
+                        <label for="iphp">PHP</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="i.net" name=".net">
+                        <label for="i.net">.NET</label>
+                        <input type="checkbox" id="ivue.js" name="vue.js">
+                        <label for="ivue.js">Vue.JS</label>
+                        <input type="checkbox" id=".reactjs" name="reactjs">
+                        <label for="ireactjs">ReactJS</label>
+                        <input type="checkbox" id="ireactnative" name="reactnative">
+                        <label for="ireactnative">React Native</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="inode" name="node">
+                        <label for="inode">Node</label>
+                        <input type="checkbox" id="ipython" name="python">
+                        <label for="ipython">Python</label>
+                        <input type="checkbox" id="iflutter" name="flutter">
+                        <label for="ifluter">Flutter</label>
+                        <input type="checkbox" id="ioutras" name="outras">
+                        <label for="iioutras">Outras</label>
+                    </div>
+                    
+                    <button>Enviar</button>
+                    </form>
+                    </section>
+                    </main>
+                    
+                    <main>
+                        <img src="../dev.png" alt="Banner" style="width: 450px; height: 500px;">
+                    </main>
+                    
     <footer>
         <p>Objetivos</p>
     </footer>
 
 </body>
 </html>
-
+                    

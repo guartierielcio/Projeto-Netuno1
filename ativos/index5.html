@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Netuno1</title>
+    <title>Projeto Netuno5</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
@@ -26,7 +26,7 @@
         }
 
         header {
-            background-color: linear-gradient(to bottom, #1A7FBD, #A4DCFF); 
+            background-color: linear-gradient(to bottom #1A7FBD, #A4DCFF); 
             color: #FFF;
             padding: 0px;
             display: flex;
@@ -135,10 +135,6 @@
             background-color:#FFF; 
             padding: 10px;
             border-radius: 10px;
-            margin-top: -586px;
-            margin-left: 50px;
-            width: 50%;
-            z-index: 1;
         }
 
         form p {
@@ -188,25 +184,6 @@
             border-bottom: 1px solid white;
             margin-bottom: 20px; 
         }
-        
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            margin-right: 100px; /* Margem à direita para afastar do banner */
-        }
-
-        .container img {
-            width: 50%;
-            height: auto;
-        }
-
-        .text-box {
-            background-color: #FFF;
-            padding: 20px;
-            width: 50%;
-        }
 
     </style>
 </head>
@@ -230,47 +207,100 @@
     <div class="divider"></div>
 
     <main>
+        <div>
+            <p class="vertical-text"></p>
+        </div>
         <section style="display: flex; flex-direction: column; align-items: center;">
-            <!-- Imagem do banner com o texto "Gerando Diamantes" -->
-            <div class="banner">
-                <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px; margin-right: 100px;">
-                <div class="vertical-text">Gerando Diamantes</div>
-            </div>
+            <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px;"> 
         </section>
 
-        <!-- Formulário de cadastro -->
-        <section>
+        <section style="display: flex; flex-direction: column; align-items: center;">
+            
             <form>
                 <h2>Formulário de Cadastro</h2>
                 <p>Preencha seus dados*:</p>
                 <p>
-                    <img src="../icones/user.png" alt="Ícone user" style="width: 15px;">
-                    <input type="text" name="nome" id="inome" required maxlength="100" placeholder                     <p>
-                        <img src="../icones/mail.png" alt="Ícone e-mail" style ="width: 15px;">
-                        <input type="text" id="iemail" name="email" required maxlength="100" placeholder="e-mail*">
-                    </p>
+                    <img src="../icones/user.png" alt="Ícone user" style ="width: 15px;">
+                    <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Nome Completo*" autocomplete="name" required>
+                </p>
+                
+                <p>
+                    <img src="../icones/mail.png" alt="Ícone e-mail" style ="width: 15px;">
+                    <input type="text" id="iemail" name="email" required maxlength="100" placeholder="e-mail*">
+                </p>
                     
-                    <p>
-                        <img src="../icones/state.png" alt="Ícone estado" style ="width: 15px;">
-                        <select name="estado" id="iest">
-                            <option value="" selected>Estado*</option>
-                   
-                        </select><br>
+                <p>
+                    <img src="../icones/state.png" alt="Ícone estado" style ="width: 15px;">
+                    <select name="estado" id="iest">
+                        <option value="" selected>Estado*</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
                     
                     <p>Conhecimento em Programação*</p>
                     <div class="checkbox-group">
                         <input type="checkbox" id="ihtml" name="html">
                         <label for="ihtml">HTML</label>
-                      
+                        <input type="checkbox" id="icss" name="css">
+                        <label for="icss">CSS</label>
+                        <input type="checkbox" id="ijavascript" name="javascript">
+                        <label for="ijavascript">JavaScript</label>
+                        <input type="checkbox" id="iphp" name="php">
+                        <label for="iphp">PHP</label>
                     </div>
-                   
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="i.net" name=".net">
+                        <label for="i.net">.NET</label>
+                        <input type="checkbox" id="ivue.js" name="vue.js">
+                        <label for="ivue.js">Vue.JS</label>
+                        <input type="checkbox" id=".reactjs" name="reactjs">
+                        <label for="ireactjs">ReactJS</label>
+                        <input type="checkbox" id="ireactnative" name="reactnative">
+                        <label for="ireactnative">React Native</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="inode" name="node">
+                        <label for="inode">Node</label>
+                        <input type="checkbox" id="ipython" name="python">
+                        <label for="ipython">Python</label>
+                        <input type="checkbox" id="iflutter" name="flutter">
+                        <label for="ifluter">Flutter</label>
+                        <input type="checkbox" id="ioutras" name="outras">
+                        <label for="iioutras">Outras</label>
+                    </div>
                     
                     <button>Enviar</button>
-            </form>
-        </section>
-    </main>
-    
-    
+                    </form>
+                    </section>
+                    </main>
+                    
+                   
     <main>
         <div class="container">
             <img src="../dev.png" alt="Banner" style="width: 450px; height: 500px;">
@@ -281,12 +311,11 @@
             </div>
         </div>
     </main>
-    
-
-    <footer>
-        <p>Objetivos</p>
-    </footer>
-
-</body>
-</html>
-
+                    
+                    <footer>
+                        <p>Objetivos</p>
+                    </footer>
+                    
+                    </body>
+                    </html>
+                    

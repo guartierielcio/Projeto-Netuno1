@@ -8,13 +8,7 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
-        :root {
-        --azul: #1A7FBD;
-        --azul-light: #A4DCFF;
-        --preto: #000;
-        --branco: #FFF;
-        --cinza: #CCCCCC;
-            }
+       
             body {
                 font-family: 'Noto Sans', sans-serif;
                 background:#1A7FBD;
@@ -94,12 +88,17 @@
                 padding: 20px; 
                 color: white;
             }
-            h2{
+            .primeiro#h2{
                 color: #A4DCFF;
                 font-size: 10px;
             }
             p{
                 font-size: 14px;
+            }
+
+            .segundo#h2{
+                color: #FFF;
+                font-size: 10px;
             }
             section {
                 margin-bottom: 20px;
@@ -125,7 +124,11 @@
                 width: 300px;
                 border-radius: 0 0 5px 5px;
                 color: #FFF;
+            }
 
+            #terceiro-form{
+                border-radius: 5px;
+                border: 1px solid #cccccc;
             }
 
             form {
@@ -149,6 +152,13 @@
             form label img {
                 margin-right: 10px;
                 width: 20px;
+            }
+            form input[type="text"],
+            form select {
+                padding-left: 30px;
+                background-repeat: no-repeat;
+                background-position: 5px center;
+                background-size: 15px;
             }
             form button {
                 background-color: #1A7FBD;
@@ -332,4 +342,5 @@
     
 </body>
 </html>
+
 

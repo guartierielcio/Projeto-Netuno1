@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Netuno8</title>
+    <title>Index Netuno</title>
     <style>
         
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
@@ -115,6 +115,19 @@
                 font-size: 30px;
             }
 
+            #primeiro-form {
+                width: 300px;
+                border-radius: 5px 5px 0 0;
+            }
+
+            #segundo-form {
+                background-color: #2787c2;
+                width: 300px;
+                border-radius: 0 0 5px 5px;
+                color: #FFF;
+
+            }
+
             form {
                 background-color:#FFF;
                 padding: 10px;
@@ -210,7 +223,7 @@
             </section>
 
             <section style="display: flex; flex-direction: column; align-items: center;">
-                <form>
+                <form id="primeiro-form">
                     <h2>Formulário de Cadastro</h2>
                     <p>Preencha seus dados*:</p>
                     <p>
@@ -262,7 +275,7 @@
                             </select>
                         </div>
                 </form>
-                <form >
+                <form id="segundo-form">
                     <p>Conhecimento em Programação*</p>
                     <div class="checkbox-group">
                         <input type="checkbox" id="ihtml" name="html">

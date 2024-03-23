@@ -5,187 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Netuno5</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
-        :root {
-            --azul: #1A7FBD;
-            --azul-light: #A4DCFF;
-            --preto: #000;
-            --branco: #FFF;
-            --cinza: #CCCCCC; 
-        }
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            background: linear-gradient(to bottom, #1A7FBD, #A4DCFF ); 
-            margin: 15px;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items:center; 
-        }
-
-        header {
-            background-color: linear-gradient(to bottom #1A7FBD, #A4DCFF); 
-            color: #FFF;
-            padding: 0px;
-            display: flex;
-            justify-content: space-between; 
-            align-items:center;
-            width: 100%;
-            max-width: 1200px; 
-        }
-
-        h1{
-            text-align: center;
-        }
-
-        .logo {
-            margin-left: 20px;
-            margin-right: 20px; 
-        }
-
-        image banner{
-            text-align: right;
-            padding: 10px;
-        }
-
-        nav ul {
-            display: flex; 
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            margin-right: 150px; /* Ajuste da margem direita para mover o header para a direita */
-        }
-
-        nav ul li {
-            margin-right: 50px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 100px; 
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: normal;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline; 
-        }
-
-        nav ul li:last-child button {
-            background-color: black; 
-            color: #FFF;
-            border-radius: 8px; 
-            border: none;
-            padding: 6px 20px;
-            font-size: 14px; 
-            cursor: pointer;
-        }
-
-        nav ul li:last-child button:hover {
-            background-color: #FFF;
-            color: #000; 
-        }
-
-        main {
-            padding: 10px;
-            width: 100%;
-            max-width: 1200px; /* Limitando a largura do conteúdo principal */
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .vertical-text {
-            writing-mode: vertical-lr; /* Escreve o texto verticalmente */
-            transform: rotate(180deg); /* Inverte a orientação do texto */
-            padding: 20px; /* Espaçamento interno */
-            color: white;
-        }
-
-        h2{
-            color: #1A7FBD;
-            font-size: 18px;
-        }
-
-        p{
-            font-size: 14px;
-        }
-
-        section {
-            margin-bottom: 20px;
-            width: 50%;
-        }
         
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+        
+        :root {
+        --azul: #1A7FBD;
+        --azul-light: #A4DCFF;
+        --preto: #000;
+        --branco: #FFF;
+        --cinza: #CCCCCC;
+            }
+            body {
+                font-family: 'Noto Sans', sans-serif;
+                background:#1A7FBD;
+                margin: 15px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+            }
+            header {
+                background-color: linear-gradient(to bottom, #1A7FBD, #A4DCFF);
+                color: #FFF;
+                padding: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                width: 100%;
+                max-width: 1200px;
+            }
+           
+            h1{
+                text-align: center;
+            }
+            .logo {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .banner {
+                text-align: right;
+                padding: 10px;
+            }
+            nav ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                margin-right: 150px; /* Ajuste da margem direita para mover o header para a direita */
+            }
+            nav ul li {
+                margin-right: 50px;
+            }
+            nav ul li:last-child {
+                margin-right: 100px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            nav ul li:last-child button {
+                background-color: black;
+                color: #FFF;
+                border-radius: 8px;
+                border: none;
+                padding: 6px 20px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            nav ul li:last-child button:hover {
+                background-color: #FFF;
+                color: #000;
+            }
+            main {
+                padding: 10px;
+                width: 100%;
+                max-width: 1200px; /* Limitando a largura do conteúdo principal */
+                display: flex;
+                justify-content: space-between;
+            }
+            .vertical-text {
+                writing-mode: vertical-lr;
+                transform: rotate(180deg); 
+                padding: 20px; 
+                color: white;
+            }
+            h2{
+                color: #A4DCFF;
+                font-size: 10px;
+            }
+            p{
+                font-size: 14px;
+            }
+            section {
+                margin-bottom: 20px;
+                width: 50%;
+            }
+        
+            footer {
+                background-color: #1A7FBD;
+                color:#FFF;
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+                font-size: 30px;
+            }
 
-        footer {
-            background-color: #1A7FBD;
-            color:#FFF;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            font-size: 30px;
-        }
+            #primeiro-form {
+                width: 300px;
+                border-radius: 5px 5px 0 0;
+            }
 
-        form {
-            background-color:#FFF; 
-            padding: 10px;
-            border-radius: 10px;
-        }
+            #segundo-form {
+                background-color: #2787c2;
+                width: 300px;
+                border-radius: 0 0 5px 5px;
+                color: #FFF;
 
-        form p {
-            color: gray;
-            margin-bottom: 10px;
-        }
+            }
 
-        form label {
-            color: #000;
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 10px;
-        }
-
-        form label img {
-            margin-right: 10px;
-            width: 20px;
-        }
-
-        form button {
-            background-color: #1A7FBD;
-            border: none;
-            padding: 10px 130px;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
-            color: #FFF;
-        }
-
-        .checkbox-group {
-            display: flex;
-            align-items: center;
-        }
-
-        .checkbox-group label {
-            margin-right: 20px;
-        }
-
-        .checkbox-group input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        /* Estilo para o traço contínuo branco */
-        .divider {
-            width: 100%;
-            border-bottom: 1px solid white;
-            margin-bottom: 20px; 
-        }
-
+            form {
+                background-color:#FFF;
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+                max-width: 300px;
+            }
+            form p {
+                color: gray;
+                margin-bottom: 10px;
+            }
+            form label {
+                color: #000;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                font-size: 10px;
+            }
+            form label img {
+                margin-right: 10px;
+                width: 20px;
+            }
+            form button {
+                background-color: #1A7FBD;
+                border: none;
+                padding: 10px 130px;
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 10px;
+                color: #FFF;
+            }
+            .checkbox-group {
+                display: flex;
+                align-items: center;
+            }
+            .checkbox-group label {
+                margin-right: 20px;
+            }
+            .checkbox-group input[type="checkbox"] {
+                margin-right: 5px;
+            }
+        
+            .divider {
+                width: 100%;
+                border-bottom: 1px solid white;
+                margin-bottom: 20px;
+            }
+                
+            .container {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+            .container img {
+                width: 550px;
+                height: 450px;
+                margin-right: 170px;
+            }
+            .text-box {
+                padding:20px;
+                width: 30%;
+                color: #FFF;
+            }
     </style>
+
+   
 </head>
 <body>
     <header>
@@ -203,65 +211,71 @@
         </h1>
     </header>
 
-    <!-- Traço contínuo branco -->
-    <div class="divider"></div>
+    
+        <div class="divider"></div>
 
-    <main>
-        <div>
-            <p class="vertical-text"></p>
-        </div>
-        <section style="display: flex; flex-direction: column; align-items: center;">
-            <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px;"> 
-        </section>
+        <main>
+            <div>
+                <p class="vertical-text"></p>
+            </div>
+            <section style="display: flex; flex-direction: column; align-items: center;">
+                <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px;"> 
+            </section>
 
-        <section style="display: flex; flex-direction: column; align-items: center;">
-            
-            <form>
-                <h2>Formulário de Cadastro</h2>
-                <p>Preencha seus dados*:</p>
-                <p>
-                    <img src="../icones/user.png" alt="Ícone user" style ="width: 15px;">
-                    <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Nome Completo*" autocomplete="name" required>
-                </p>
-                
-                <p>
-                    <img src="../icones/mail.png" alt="Ícone e-mail" style ="width: 15px;">
-                    <input type="text" id="iemail" name="email" required maxlength="100" placeholder="e-mail*">
-                </p>
-                    
-                <p>
-                    <img src="../icones/state.png" alt="Ícone estado" style ="width: 15px;">
-                    <select name="estado" id="iest">
-                        <option value="" selected>Estado*</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select><br>
-                    
+            <section style="display: flex; flex-direction: column; align-items: center;">
+                <form id="primeiro-form">
+                    <h2>Formulário de Cadastro</h2>
+                    <p>Preencha seus dados*:</p>
+                    <p>
+                        <p>
+                            <div style="position: relative;">
+                                <img src="../icones/user.png" alt="Ícone usuário" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 15px;">
+                                <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Nome Completo*" autocomplete="name" required style="padding-left: 30px; background-repeat: no-repeat; background-position: 5px center; background-size: 15px;">
+                            </div>
+                        </p>
+                        <p>
+                            <div style="position: relative;">
+                                <img src="../icones/mail.png" alt="Ícone e-mail" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 15px;">
+                                <input type="text" id="iemail" name="email" required maxlength="100" placeholder="e-mail*" style="padding-left: 30px; background-repeat: no-repeat; background-position: 5px center; background-size: 15px;">
+                            </div>
+                        </p>
+                        
+                    <p>
+                        <div style="position: relative;">
+                            <img src="../icones/state.png" alt="Ícone estado" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 15px;">
+                            <select name="estado" id="iest" style="padding-left: 30px;">
+                                <option value="" selected>Estado*</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                </form>
+                <form id="segundo-form">
                     <p>Conhecimento em Programação*</p>
                     <div class="checkbox-group">
                         <input type="checkbox" id="ihtml" name="html">
@@ -283,7 +297,6 @@
                         <input type="checkbox" id="ireactnative" name="reactnative">
                         <label for="ireactnative">React Native</label>
                     </div>
-                    
                     <div class="checkbox-group">
                         <input type="checkbox" id="inode" name="node">
                         <label for="inode">Node</label>
@@ -294,28 +307,29 @@
                         <input type="checkbox" id="ioutras" name="outras">
                         <label for="iioutras">Outras</label>
                     </div>
+                </form>
+                <button>Enviar</button>
+            </section>
+        </main>
                     
-                    <button>Enviar</button>
-                    </form>
-                    </section>
-                    </main>
-                    
-                   
-    <main>
-        <div class="container">
-            <img src="../dev.png" alt="Banner" style="width: 450px; height: 500px;">
-            <div class="text-box">
-                <h2>O Projeto</h2>
-                <p>Este é um parágrafo de exemplo.</p>
-                <p>Este é outro parágrafo de exemplo.</p>
+        <main>
+            <div class="container">
+                <img src="../dev.png" alt="Banner" style="width: 450px; height: 350px;">
+                <div class="text-box">
+                    <h2>O Projeto</h2>
+                    <p>Com o "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo todo têm aberto oportunidades no modelo Home Office. Alinhado à depreciação da moeda local, temos um alto índice de profissionais migrando para trabalhos em outros países.
+                    </p>
+                    <strong>
+                        <p>O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados pelo recrutamento e turnover na área de tecnologia, bem como gerar oportunidades de carreira para novos profissionais.</p>
+                    </strong>
+                </div>
             </div>
-        </div>
-    </main>
-                    
-                    <footer>
-                        <p>Objetivos</p>
-                    </footer>
-                    
-                    </body>
-                    </html>
-                    
+        </main>
+
+    <footer>
+        <p>Objetivos</p>
+    </footer>
+    
+</body>
+</html>
+

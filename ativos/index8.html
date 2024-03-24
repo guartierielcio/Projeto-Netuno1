@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj9</title>
+    <title>Proj8</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
@@ -185,12 +185,10 @@
             display: flex;
             align-items: center;
         }
-
         .checkbox-group label {
             margin-right: 20px;
             color: white;
         }
-
         .checkbox-group input[type="checkbox"] {
             margin-right: 5px;
             
@@ -224,6 +222,41 @@
             font-size: 30px;
             color:#A4DCFF;
         }
+
+        .container2{
+            text-align: right;
+        }
+
+        .container-section {
+            background-color: #FFF;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container-section img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-box p {
+                    color: black; /* Define a cor do texto para preto */
+                }
+
+                .text-box strong p:first-child {
+                    font-size: 18px; /* Ajusta o tamanho do primeiro parágrafo dentro de strong */
+                }
+
+                .text-box strong p {
+                    color: black; /* Define a cor do texto forte para preto */
+                }
+
+                .text-box hr {
+                    border: 1px solid #CCCCCC; /* Define um traço cinza */
+                    width: 100%; /* Faz com que o traço ocupe toda a largura */
+                }
+
     </style>
 </head>
 <body>
@@ -347,19 +380,13 @@
                     <input type="checkbox" id="ioutras" name="outras">
                     <label for="iioutras">Outras</label>
                 </div>
-            </form >
-                
-            </form>
-            
-            <form id="terceiro-form">
-                
             </form>
             
             <button>Enviar</button>
         </section>
     </main>
 
-    <div class="container-section">
+    <div class="container-section" style="background-color: #1A7FBD; margin-left: 100px;">
         <div class="container">
             <img src="../dev.png" alt="Banner" style="width: 450px; height: 350px;">
             <div class="text-box">
@@ -371,12 +398,32 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <footer>
-            <p>Objetivos</p>
-        </footer>
+    
+    
+    <div class="container-section" style="background-color: #FFF; width: 100vw;">
+        <div class="container">
+            <img src="../Container2.png" alt="Container2" style="width: 450px; height: 650px; margin-left: 20px;">
+            <div class="text-box">
+                <h3>O Problema</h3>
+                <strong>
+                    <p>Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
+                </strong>
+                <hr style="border-top: 1px solid #CCCCCC; width: 100%; margin-bottom: 10px;">
+                <p>Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$ 167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
+                <strong>
+                    <p>Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o exterior.</p>
+                </strong>
+            </div>
+        </div>
     </div>
+    
+    <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+            <img src="logo+slogan.png" alt="Logo da Empresa" style="width: 100px; height: auto; margin-right: 20px;">
+            <p style="margin-top: 10px;">Netuno © 2024, Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
+
 

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.text-box p,
+.text-box hr {
+    color: black; 
+}

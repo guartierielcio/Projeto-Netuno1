@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Projeto</title>
+    <title>Index Projeto1</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
@@ -242,20 +242,52 @@
 
         .text-box p {
                     color: black; /* Define a cor do texto para preto */
-                }
+         }
 
-                .text-box strong p:first-child {
+         .text-box strong p:first-child {
                     font-size: 18px; /* Ajusta o tamanho do primeiro parágrafo dentro de strong */
-                }
+         }
 
-                .text-box strong p {
+         .text-box strong p {
                     color: black; /* Define a cor do texto forte para preto */
-                }
+         }
 
-                .text-box hr {
+         .text-box hr {
                     border: 1px solid #CCCCCC; /* Define um traço cinza */
                     width: 100%; /* Faz com que o traço ocupe toda a largura */
-                }
+         }
+
+         .quadrados-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .quadrado {
+            border: #343333;
+            border-radius: 10px;
+            background-color: #FFF;
+            width: 250px;
+            height: 140px;
+            padding: 30px;
+            margin-right: 20px;
+        }
+
+        .quadrado:last-child {
+            margin-right: 0;
+        }
+
+         
+        div#q1{
+            background-color: #FFF;
+            
+        }
+        div#q2{
+            background-color: #FFF;
+        }
+        div#q3{
+            background-color: #FFF;
+        }
 
     </style>
 </head>
@@ -417,6 +449,21 @@
         </div>
     </div>
     
+    <div class="quadrados-container">
+        <div class="quadrado" id="q1">
+            <h2><strong>Oportunidade</strong></h2>
+            <p>Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo</p>
+        </div>
+        <div class="quadrado" id="q2">
+            <h2><strong>Comunidade</strong></h2>
+            <p>Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+        </div>
+        <div class="quadrado" id="q3">
+            <h2><strong>Experiência Real</strong></h2>
+            <p>Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não pode fazer.</p>
+        </div>
+    </div>
+
     <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
         <div style="display: flex; align-items: center; justify-content: flex-start;">
             <img src="logo+slogan.png" alt="Logo da Empresa" style="width: 100px; height: auto; margin-right: 20px;">
@@ -425,5 +472,3 @@
     </footer>
 </body>
 </html>
-
-

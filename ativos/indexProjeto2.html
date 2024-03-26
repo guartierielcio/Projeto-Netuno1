@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndexProjeto2</title>
+    <title>Index Projeto2</title>
     <link rel="stylesheet" href="style.css">
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
@@ -19,8 +19,8 @@
         body {
             font-family: 'Noto Sans', sans-serif;
             background:#1A7FBD;
-            margin: 15px;
-            padding: 15px;
+            margin: 0; /* Removendo a margem */
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -89,12 +89,14 @@
         }
 
         main {
-            padding: 10px;
-            width: 100%;
-            max-width: 1200px; 
-            display: flex;
-            justify-content: space-between;
-        }
+    padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
+    margin-top: 20px; /* Adicionando margem superior para separar do header */
+}
 
         .vertical-text {
             writing-mode: vertical-lr;
@@ -116,10 +118,10 @@
 
                  
         section {
-            margin-bottom: 20px;
-            width: 50%;
-        }
-
+    margin-bottom: 20px;
+    width: 50%;
+    margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
+}
         footer {
             background-color: #1A7FBD;
             color:#FFF;
@@ -227,14 +229,6 @@
         .container2{
             text-align: right;
         }
-
-        .container-section {
-            background-color: #FFF;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
         .container-section img {
             width: 100%;
             max-width: 100%;
@@ -242,67 +236,102 @@
         }
 
         .text-box p {
-                    color: black; 
+            color: black; 
         }
 
-         .text-box strong p:first-child {
-                    font-size: 18px;
+        .text-box strong p:first-child {
+            font-size: 18px;
         }
 
-         .text-box strong p {
-                    color: black;
+        .text-box strong p {
+            color: black;
         }
 
-         .text-box hr {
-                border: 1px solid #CCCCCC;
-                width: 100%;
+        .text-box hr {
+            border: 1px solid #CCCCCC;
+            width: 100%;
         }
 
         .quadrados-container {
-                 display: flex;
-                 justify-content: center;
-                 
-                 margin:center;
+            display: flex;
+            justify-content: center;
+            margin: auto; /* Centralizando horizontalmente */
         }
         .quadrado {
-                width: 300px;
-                height: 200px;
-                padding: 20px;
-                box-sizing: border-box; 
-                border: 2px solid #f4f2f2fe;
-                border-radius: 10px;
-                margin: 5px;
-                background-color: transparent;
-                box-shadow: 1px 1px 5px #000;
+            width: 300px;
+            height: 200px;
+            padding: 20px; /* Adiciona um preenchimento uniforme a todos os lados */
+            box-sizing: border-box; /* Inclui preenchimento e borda no tamanho total */
+            border: 2px solid #f4f2f2fe;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: transparent;
+            box-shadow: 1px 1px 5px #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .quadrado h2{
-            color:#000
+
+        .quadrado h2 {
+            color: black; /* Define a cor do texto como preto */
+            text-align: center; /* Centraliza o texto */
         }
 
-        div#q1{
-            
-                text-align: center;
-            
+        .quadrado p {
+            color: black; /* Define a cor do texto como preto */
+            text-align: center; /* Centraliza o texto */
         }
-        div#q2{
-                text-align: center;
 
+        .quadrado img {
+            width: 50px; /* Alterar o tamanho do ícone conforme necessário */
+            margin-bottom: 10px;
         }
-        div#q3{
-                text-align: center;
-        }
+
         .sua-jornada-title {
-        color: #1A7FBD;
-        text-align: center;
-        font-size: 45px;
-        padding: 5px 0;
-        width: fit-content;
-        margin: 0 auto;
+            color: #1A7FBD;
+            text-align: center;
+            font-size: 45px;
+            padding: 5px 0;
+            width: fit-content;
+            margin: 0 auto;
         }
 
+        .sua-jornada-container {
+            text-align: center;
+            margin-top: 20px;
+        }
 
+        .quadrados-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+           
+            
+        }
+
+        .quadrado.q4,
+        .quadrado.q5,
+        .quadrado.q6 {
+            width: 250px; /* Ajustando a largura dos quadrados */
+        }
+
+        .quadrado.q4 img,
+        .quadrado.q5 img,
+        .quadrado.q6 img {
+            width: 40px; /* Ajustando o tamanho dos ícones */
+        }
+
+        .quadrado.q4 p,
+        .quadrado.q5 p,
+        .quadrado.q6 p {
+            font-size: 14px; /* Ajustando o tamanho do texto */
+            margin: 10px 0; /* Espaçamento entre o ícone e o texto */
+        }
     </style>
+</head>
 </head>
 <body>
     <header>
@@ -330,7 +359,7 @@
             <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px ;"> 
         </section>
 
-        <section style="display: flex; flex-direction: column; align-items: center;">
+        <section style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
             <form id="primeiro-form">
                 <h2>Formulário de Cadastro</h2>
                 <p>Preencha seus dados*:</p>
@@ -478,11 +507,27 @@
         </div>
         
        <div class="sua-jornada-container">
-    <h2 class="sua-jornada-title">Sua Jornada</h2>
+        <h2 class="sua-jornada-title">Sua Jornada</h2>
+        
+        <div class="quadrados-container1">
+            <!-- Quadrado 4 -->
+            <div class="quadrado q4">
+                <img src="../icones/calendario.png" alt="calendario">
+                <p>Programa de 4 meses de duração, sendo 6 horas/dia.</p>
+            </div>
+            <!-- Quadrado 5 -->
+            <div class="quadrado q5">
+                <img src="../icones/medalha.png" alt="medalia">
+                <p>Do Zero ao Junior Promissor em 4 meses.</p>
+            </div>
+            <!-- Quadrado 6 -->
+            <div class="quadrado q6">
+                <img src="../icones/relogio.png" alt="relogio">
+                <p>640 horas de aplicação prática dos conceitos.</p>
+            </div>
+            
         </div>
-</div>
-    
-    </div>
+        
     
     <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
         <div style="display: flex; align-items: center; justify-content: flex-start;">
@@ -492,3 +537,4 @@
     </footer>
 </body>
 </html>
+

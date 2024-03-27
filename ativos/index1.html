@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj1</title>
-    <style>
+    <title>Index Projeto3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
         :root {
@@ -14,12 +15,12 @@
             --branco: #FFF;
             --cinza: #CCCCCC;
         }
-
+        
         body {
             font-family: 'Noto Sans', sans-serif;
             background:#1A7FBD;
-            margin: 15px;
-            padding: 15px;
+            margin: 0; /* Removendo a margem */
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -88,12 +89,14 @@
         }
 
         main {
-            padding: 10px;
-            width: 100%;
-            max-width: 1200px; /* Limitando a largura do conteúdo principal */
-            display: flex;
-            justify-content: space-between;
-        }
+    padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
+    margin-top: 20px; /* Adicionando margem superior para separar do header */
+}
 
         .vertical-text {
             writing-mode: vertical-lr;
@@ -115,10 +118,10 @@
 
                  
         section {
-            margin-bottom: 20px;
-            width: 50%;
-        }
-
+    margin-bottom: 20px;
+    width: 50%;
+    margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
+}
         footer {
             background-color: #1A7FBD;
             color:#FFF;
@@ -226,14 +229,6 @@
         .container2{
             text-align: right;
         }
-
-        .container-section {
-            background-color: #FFF;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
         .container-section img {
             width: 100%;
             max-width: 100%;
@@ -241,23 +236,166 @@
         }
 
         .text-box p {
-                    color: black; /* Define a cor do texto para preto */
-                }
+            color: black; 
+        }
 
-                .text-box strong p:first-child {
-                    font-size: 18px; /* Ajusta o tamanho do primeiro parágrafo dentro de strong */
-                }
+        .text-box strong p:first-child {
+            font-size: 18px;
+        }
 
-                .text-box strong p {
-                    color: black; /* Define a cor do texto forte para preto */
-                }
+        .text-box strong p {
+            color: black;
+        }
 
-                .text-box hr {
-                    border: 1px solid #CCCCCC; /* Define um traço cinza */
-                    width: 100%; /* Faz com que o traço ocupe toda a largura */
-                }
+        .text-box hr {
+            border: 1px solid #CCCCCC;
+            width: 100%;
+        }
 
+        .quadrados-container {
+            display: flex;
+            justify-content: center;
+            margin: auto; /* Centralizando horizontalmente */
+        }
+        .quadrado {
+            width: 300px;
+            height: 200px;
+            padding: 20px; /* Adiciona um preenchimento uniforme a todos os lados */
+            box-sizing: border-box; /* Inclui preenchimento e borda no tamanho total */
+            border: 2px solid #f4f2f2fe;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: transparent;
+            box-shadow: 1px 1px 5px #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .quadrado h2 {
+            color: black; /* Define a cor do texto como preto */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .quadrado p {
+            color: black; /* Define a cor do texto como preto */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .quadrado img {
+            width: 50px; /* Alterar o tamanho do ícone conforme necessário */
+            margin-bottom: 10px;
+        }
+
+        .sua-jornada-title {
+            color: #1A7FBD;
+            text-align: center;
+            font-size: 45px;
+            padding: 5px 0;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .sua-jornada-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .quadrados-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .quadrado.q4,
+        .quadrado.q5,
+        .quadrado.q6 {
+            width: 300px; 
+            height: 80px;
+            background-color: #1A7FBD;
+            border: none;
+            padding: 10px;
+            
+            }
+
+        .quadrado.q4 img,
+        .quadrado.q5 img,
+        .quadrado.q6 img {
+            width: 30px; 
+            margin-bottom: 5px;
+            background-color: #FFF;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .quadrado.q4 p,
+        .quadrado.q5 p,
+        .quadrado.q6 p {
+            display: flex; /* Adiciona um display flex */
+            align-items:center;
+            text-align: center;
+            margin: 0; /* Remove a margem padrão */
+            color:#FFF
+        }
+
+        .quadrado.q7,
+        .quadrado.q8,
+        .quadrado.q9 {
+            width: 300px; /* Ajustando a largura dos quadrados */
+            height: 80px;
+            background-color: #1A7FBD;
+            border: none;
+            padding: 10px;
+            
+        }
+
+        .quadrado.q7 img,
+        .quadrado.q8 img,
+        .quadrado.q9 img {
+            width: 30px; /* Ajustando o tamanho dos ícones */
+            margin-bottom: 5px;
+            background-color: #FFF;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .quadrado.q7 p,
+        .quadrado.q8 p,
+        .quadrado.q9 p {
+            display: flex; /* Adiciona um display flex */
+            align-items:center;
+            text-align: center;
+            margin: 0; /* Remove a margem padrão */
+            color:#FFF
+        }
+
+        .quadrado-submit {
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    background-color: #000; /* Cor de fundo preto */
+    color: #FFF; /* Cor do texto branco */
+    padding: 10px 20px; /* Adiciona preenchimento interno */
+    border-radius: 15px; /* Borda arredondada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+    cursor: pointer;
+    width: 350px;
+}
+
+.quadrado-submit input[type="submit"] {
+    color: #FFF; /* Cor do texto branco */
+    
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 15px;
+    text-align: center;
+    
+}
     </style>
+</head>
 </head>
 <body>
     <header>
@@ -285,7 +423,7 @@
             <img src="../bannertopo.png" alt="Banner" style="width: 1400px; height: 1172px ;"> 
         </section>
 
-        <section style="display: flex; flex-direction: column; align-items: center;">
+        <section style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
             <form id="primeiro-form">
                 <h2>Formulário de Cadastro</h2>
                 <p>Preencha seus dados*:</p>
@@ -294,8 +432,6 @@
                     <div style="position: relative;">
                         <img src="../icones/user.png" alt="Ícone usuário" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 15px;">
                         <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Nome Completo*" autocomplete="name" required style="padding-left: 30px; background-repeat: no-repeat; background-position: 5px center; background-size: 15px; width: 270px; height: 25px;padding:10; border-radius: 5px;">
-                    </div>
-                    
                     
                 </p>
                 <p>
@@ -414,9 +550,61 @@
                     <p>Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o exterior.</p>
                 </strong>
             </div>
+            
         </div>
-    </div>
-    
+        <div class="quadrados-container">
+            <div class="quadrado" id="q1">
+                <h2><strong>Oportunidade</strong></h2>
+                <p>Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+            </div>
+            <div class="quadrado" id="q2">
+                <h2><strong>Comunidade</strong></h2>
+                <p>Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+            </div>
+            <div class="quadrado" id="q3">
+                <h2><strong>Experiência Real</strong></h2>
+                <p>Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não pode fazer.</p>
+            </div>
+        
+        </div>
+        
+       <div class="sua-jornada-container">
+        <h2 class="sua-jornada-title">Sua Jornada</h2>
+        
+        <div class="quadrados-container1">
+            <!-- Quadrado 4 -->
+            <div class="quadrado q4">
+                <p><img src="../icones/calendario.png" alt="calendario">Programa de 4 meses de duração, sendo 6 horas/dia.</p>
+            </div>
+            <!-- Quadrado 5 -->
+            <div class="quadrado q5">
+                <p><img src="../icones/medalha.png" alt="medalia">Do Zero ao Junior Promissor em 4 meses.</p>
+            </div>
+            <!-- Quadrado 6 -->
+            <div class="quadrado q6">
+                <p><img src="../icones/relogio.png" alt="relogio"> 640 horas de aplicação prática dos conceitos.</p>
+            </div>
+        </div>
+        
+        <div class="quadrados-container1">
+            <div class="quadrado q7">
+                <p><img src="..//icones/home.png" alt="home"> Mentoria individual e coletiva em padrão ágil.</p>
+            </div>
+            <div class="quadrado q8">
+                <p><img src="../icones/group.png" alt="group"> 100% Home Office com paltaformas de cursos online.</p>
+            </div>
+            <div class="quadrado q9">
+                <p><img src="../icones/target.png" alt="targt"> Veriedade de áreas dentro da tecnologia.</p>
+            </div>
+        </div>
+        <div class="quadrado-submit">
+            <p>
+                <input type="submit" value="Quero me cadastrar para o processo seletivo">
+            </p>
+        </div>
+
+        <p></p>
+
     <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
         <div style="display: flex; align-items: center; justify-content: flex-start;">
             <img src="logo+slogan.png" alt="Logo da Empresa" style="width: 100px; height: auto; margin-right: 20px;">
@@ -425,5 +613,4 @@
     </footer>
 </body>
 </html>
-
 

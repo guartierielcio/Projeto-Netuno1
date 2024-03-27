@@ -152,8 +152,53 @@
         #terceiro-form{
             background-color:#FFF;
             width: 300px;
-            border-radius: 0 0 5px 5px;
+            border-radius: 0 0 15px 15px;
         }
+
+        .obrigatorio {
+            position: relative; /* Define a posição como relativa para permitir o posicionamento do traço */
+        }
+
+        .obrigatorio h6 {
+            color: #1A7FBD; /* Cor do texto */
+            font-size: 12px;
+            text-align: center; /* Centraliza o texto horizontalmente */
+        }
+
+        .obrigatorio::before {
+            content: ""; /* Adiciona um conteúdo vazio */
+            position: absolute; /* Define a posição absoluta para o traço */
+            top: -2px; /* Posiciona o traço acima do texto */
+            left: 0; /* Alinha o traço com o início da div */
+            width: 100%; /* Define a largura do traço para cobrir toda a largura da div */
+            height: 1px; /* Define a altura do traço */
+            background-color: rgba(128, 128, 128, 0.613); /* Cor do traço */
+        }
+
+
+
+        .custom-h2{
+            color:#1A7FBD;
+            font-size: 14px;
+        }
+        h6{
+            color:#1A7FBD;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .custom-h6 {
+            color:rgba(128, 128, 128, 0.613);
+            font-size: 9px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .blue-text {
+            color: #1A7FBD; /* Define a cor azul */
+        }
+
+        
 
          /* Estilos para os botões de opção */
         input[type="radio"]{
@@ -165,8 +210,8 @@
             cursor: pointer; 
             display: inline-block; 
             margin-right: 40px; 
-            font-size: 15px;
-            color: #b1ababe1;
+            font-size: 14px;
+            color: rgba(128, 128, 128, 0.613);
         }
 
         /* Estilo do botão de opção personalizado */
@@ -299,7 +344,7 @@
         }
 
         .text-box hr {
-            border: 1px solid #CCCCCC;
+            border: 1px solid rgba(128, 128, 128, 0.613);
             width: 100%;
         }
 
@@ -567,7 +612,7 @@
                 </div>
             </form>
             <form id="terceiro-form">
-                <h2>Já trabalhou com programação?</h2>
+                <h2 class="custom-h2">Já trabalhou com programação?</h2>
                 <label class="radio-label" for="nao">
                     <input type="radio" name="trabalhou" id="nao" value="N">
                     <span class="custom-radio"></span> Não
@@ -577,9 +622,13 @@
                     <input type="radio" name="trabalhou" id="sim" value="S">
                     <span class="custom-radio"></span> Sim
                 </label>
+
+                <div class="obrigatorio">
+                    <h6>(*) Campos obrigatórios</h6>
+                </div>
                 
                 <button><input type="submit" value="Enviar" style="background-color: transparent; border: none; color: #fff;"></button>
-                
+                <h6 class="custom-h6">Ao clicar, você concorda com todos os termos de uso de dados descritos em <span class="blue-text">política de privacidade</span></h6>
             </form>
         </section>
         
@@ -597,7 +646,6 @@
             </div>
         </div>
     </div>
-    
     
     <div class="container-section" style="background-color: #FFF; width: 100vw;">
         <div class="container">

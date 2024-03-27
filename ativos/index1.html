@@ -89,14 +89,14 @@
         }
 
         main {
-    padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
-    margin-top: 20px; /* Adicionando margem superior para separar do header */
-}
+            padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
+            margin-top: 20px; /* Adicionando margem superior para separar do header */
+        }
 
         .vertical-text {
             writing-mode: vertical-lr;
@@ -118,10 +118,11 @@
 
                  
         section {
-    margin-bottom: 20px;
-    width: 50%;
-    margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
-}
+            margin-bottom: 20px;
+            width: 50%;
+            margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
+        }
+
         footer {
             background-color: #1A7FBD;
             color:#FFF;
@@ -148,6 +149,101 @@
             color: #FFF;
         }
 
+        #terceiro-form{
+            background-color:#FFF;
+            width: 300px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .obrigatorio {
+            position: relative; /* Define a posição como relativa para permitir o posicionamento do traço */
+        }
+
+        .obrigatorio h6 {
+            color: #1A7FBD; /* Cor do texto */
+            font-size: 12px;
+            text-align: center; /* Centraliza o texto horizontalmente */
+        }
+
+        .obrigatorio::before {
+            content: ""; /* Adiciona um conteúdo vazio */
+            position: absolute; /* Define a posição absoluta para o traço */
+            top: -2px; /* Posiciona o traço acima do texto */
+            left: 0; /* Alinha o traço com o início da div */
+            width: 100%; /* Define a largura do traço para cobrir toda a largura da div */
+            height: 1px; /* Define a altura do traço */
+            background-color: rgba(128, 128, 128, 0.613); /* Cor do traço */
+        }
+
+
+
+        .custom-h2{
+            color:#1A7FBD;
+            font-size: 14px;
+        }
+        h6{
+            color:#1A7FBD;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .custom-h6 {
+            color:rgba(128, 128, 128, 0.613);
+            font-size: 9px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .blue-text {
+            color: #1A7FBD; /* Define a cor azul */
+        }
+
+        
+
+         /* Estilos para os botões de opção */
+        input[type="radio"]{
+            display: none;
+        }
+
+        /* Estilo do rótulo dos botões de opção */
+        label.radio-label {
+            cursor: pointer; 
+            display: inline-block; 
+            margin-right: 40px; 
+            font-size: 14px;
+            color: rgba(128, 128, 128, 0.613);
+        }
+
+        /* Estilo do botão de opção personalizado */
+        span.custom-radio {
+            width: 15px; /* Define a largura */
+            height: 15px; /* Define a altura */
+            border: 1px solid #1A7FBD; /* Adiciona uma borda */
+            border-radius: 4px;
+            display: inline-block; /* Permite que os botões de opção fiquem em linha */
+            position: relative; /* Permite posicionar o marcador centralmente */
+            margin-right: 10px; /* Adiciona espaçamento entre os botões de opção */
+        }
+
+        /* Estilo do marcador interno do botão de opção */
+        span.custom-radio::after {
+            content: ""; /* Cria um pseudo-elemento */
+            width: 10px; /* Define a largura */
+            height: 10px; /* Define a altura */
+            background-color: #fff; /* Define a cor de fundo */
+            position: absolute; /* Permite posicionar o marcador dentro do botão */
+            top: 50%; /* Alinha verticalmente */
+            left: 50%; /* Alinha horizontalmente */
+            transform: translate(-50%, -50%); /* Centraliza o marcador */
+            display: none; /* Oculta o marcador por padrão */
+        }
+
+            /* Estilo do marcador interno quando o botão de opção está marcado */
+        input[type="radio"]:checked + .custom-radio::after {
+            display: block; /* Exibe o marcador interno */
+            background-color: #1A7FBD;
+        }
+    
         form {
             background-color:#FFF;
             padding: 10px;
@@ -177,7 +273,7 @@
         form button {
             background-color: #1A7FBD;
             border: none;
-            padding: 10px 130px;
+            padding: 10px 125px;
             font-size: 16px;
             border-radius: 5px;
             margin-top: 10px;
@@ -248,7 +344,7 @@
         }
 
         .text-box hr {
-            border: 1px solid #CCCCCC;
+            border: 1px solid rgba(128, 128, 128, 0.613);
             width: 100%;
         }
 
@@ -319,7 +415,7 @@
             border: none;
             padding: 10px;
             
-            }
+        }
 
         .quadrado.q4 img,
         .quadrado.q5 img,
@@ -373,27 +469,25 @@
         }
 
         .quadrado-submit {
-    width: fit-content; /* Ajusta a largura ao conteúdo */
-    background-color: #000; /* Cor de fundo preto */
-    color: #FFF; /* Cor do texto branco */
-    padding: 10px 20px; /* Adiciona preenchimento interno */
-    border-radius: 15px; /* Borda arredondada */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    text-align: center; /* Alinha o texto ao centro */
-    cursor: pointer;
-    width: 350px;
-}
+            width: fit-content; /* Ajusta a largura ao conteúdo */
+            background-color: #000; /* Cor de fundo preto */
+            color: #FFF; /* Cor do texto branco */
+            padding: 10px 20px; /* Adiciona preenchimento interno */
+            border-radius: 15px; /* Borda arredondada */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            text-align: center; /* Alinha o texto ao centro */
+            cursor: pointer;
+            width: 350px;
+        }
 
-.quadrado-submit input[type="submit"] {
-    color: #FFF; /* Cor do texto branco */
-    
-    background: transparent; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 15px;
-    text-align: center;
-    
-}
+        .quadrado-submit input[type="submit"] {
+            color: #FFF; /* Cor do texto branco */
+            background: transparent; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 </head>
@@ -517,9 +611,27 @@
                     <label for="iioutras">Outras</label>
                 </div>
             </form>
-            
-            <button>Enviar</button>
+            <form id="terceiro-form">
+                <h2 class="custom-h2">Já trabalhou com programação?</h2>
+                <label class="radio-label" for="nao">
+                    <input type="radio" name="trabalhou" id="nao" value="N">
+                    <span class="custom-radio"></span> Não
+                </label>
+                
+                <label class="radio-label" for="sim">
+                    <input type="radio" name="trabalhou" id="sim" value="S">
+                    <span class="custom-radio"></span> Sim
+                </label>
+
+                <div class="obrigatorio">
+                    <h6>(*) Campos obrigatórios</h6>
+                </div>
+                
+                <button><input type="submit" value="Enviar" style="background-color: transparent; border: none; color: #fff;"></button>
+                <h6 class="custom-h6">Ao clicar, você concorda com todos os termos de uso de dados descritos em <span class="blue-text">política de privacidade</span></h6>
+            </form>
         </section>
+        
     </main>
 
     <div class="container-section" style="background-color: #1A7FBD; margin-left: 100px;">
@@ -534,7 +646,6 @@
             </div>
         </div>
     </div>
-    
     
     <div class="container-section" style="background-color: #FFF; width: 100vw;">
         <div class="container">

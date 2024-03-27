@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Projeto1</title>
+    <title>Index Proj1</title>
     <link rel="stylesheet" href="style.css">
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
@@ -89,14 +89,14 @@
         }
 
         main {
-    padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
-    margin-top: 20px; /* Adicionando margem superior para separar do header */
-}
+            padding: 20px; /* Aumentando o padding para afastar os elementos do topo */
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinhando os itens ao início do eixo vertical */
+            margin-top: 20px; /* Adicionando margem superior para separar do header */
+        }
 
         .vertical-text {
             writing-mode: vertical-lr;
@@ -118,10 +118,11 @@
 
                  
         section {
-    margin-bottom: 20px;
-    width: 50%;
-    margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
-}
+            margin-bottom: 20px;
+            width: 50%;
+            margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
+        }
+
         footer {
             background-color: #1A7FBD;
             color:#FFF;
@@ -146,6 +147,54 @@
             width: 300px;
             border-radius: 0 0 5px 5px;
             color: #FFF;
+        }
+
+        #terceiro-form{
+            background-color:#FFF;
+            width: 300px;
+            border-radius: 0 0 5px 5px;
+        }
+
+         /* Estilos para os botões de opção */
+         input[type="radio"] {
+            display: none; 
+        }
+
+        /* Estilo do rótulo dos botões de opção */
+        label.radio-label {
+            cursor: pointer; 
+            display: inline-block; 
+            margin-right: 40px; 
+            font-size: 15px;
+            color: #b1ababe1;
+        }
+
+        /* Estilo do botão de opção personalizado */
+        span.custom-radio {
+            width: 15px; /* Define a largura */
+            height: 15px; /* Define a altura */
+            border: 1px solid #1A7FBD; /* Adiciona uma borda */
+            display: inline-block; /* Permite que os botões de opção fiquem em linha */
+            position: relative; /* Permite posicionar o marcador centralmente */
+            margin-right: 10px; /* Adiciona espaçamento entre os botões de opção */
+        }
+
+        /* Estilo do marcador interno do botão de opção */
+        span.custom-radio::after {
+            content: ""; /* Cria um pseudo-elemento */
+            width: 20px; /* Define a largura */
+            height: 20px; /* Define a altura */
+            background-color: #fff; /* Define a cor de fundo */
+            position: absolute; /* Permite posicionar o marcador dentro do botão */
+            top: 50%; /* Alinha verticalmente */
+            left: 50%; /* Alinha horizontalmente */
+            transform: translate(-50%, -50%); /* Centraliza o marcador */
+            display: none; /* Oculta o marcador por padrão */
+        }
+
+        /* Estilo do marcador interno quando o botão de opção está marcado */
+        input[type="radio"]:checked + span.custom-radio::after {
+            display: block; /* Exibe o marcador interno */
         }
 
         form {
@@ -177,7 +226,7 @@
         form button {
             background-color: #1A7FBD;
             border: none;
-            padding: 10px 130px;
+            padding: 10px 125px;
             font-size: 16px;
             border-radius: 5px;
             margin-top: 10px;
@@ -387,9 +436,9 @@
 .quadrado-submit input[type="submit"] {
     color: #FFF; /* Cor do texto branco */
     
-    background: transparent; /* Remove o fundo do botão */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
     font-size: 15px;
     text-align: center;
     
@@ -517,9 +566,20 @@
                     <label for="iioutras">Outras</label>
                 </div>
             </form>
-            
-            <button>Enviar</button>
+            <form id="terceiro-form">
+                <h2>Já trabalhou com programação?</h2>
+                <label class="radio-label" for="nao">
+                    <input type="radio" name="trabalhou" id="nao" value="N">
+                    <span class="custom-radio"></span> Não
+                </label>
+                <label class="radio-label" for="sim">
+                    <input type="radio" name="trabalhou" id="sim" value="S">
+                    <span class="custom-radio"></span> Sim
+                </label>
+                <button><input type="submit" value="Enviar" style="background-color: transparent; border: none; color: #fff;"></button>
+            </form>
         </section>
+        
     </main>
 
     <div class="container-section" style="background-color: #1A7FBD; margin-left: 100px;">
@@ -605,10 +665,6 @@
 
         <p></p>
 
-        
-        
-        
-    
     <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
         <div style="display: flex; align-items: center; justify-content: flex-start;">
             <img src="logo+slogan.png" alt="Logo da Empresa" style="width: 100px; height: auto; margin-right: 20px;">

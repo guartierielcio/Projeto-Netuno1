@@ -117,17 +117,16 @@
         }
        
         section {
-            margin-bottom: 20px;
             width: 50%;
-            margin-top: 50px; /* Adicionando margem superior para mover o formulário para cima */
+            margin-bottom: -50px;
+           margin-top: 0px; /* Adicionando margem superior para mover o formulário para cima */
         }
 
         footer {
-            background-color: #1A7FBD;
+            background-color:#000;
             color:#FFF;
             text-align: center;
             padding: 20px;
-            width: 100%;
             font-size: 30px;
         }
 
@@ -329,7 +328,7 @@
             width: 100%;
             max-width: 100%;
             height: auto;
-        }
+           }
 
         .text-box p {
             color: black; 
@@ -468,6 +467,12 @@
             margin: 0; /* Remove a margem padrão */
             color:#FFF
         }
+        .transparent-button {
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+    }
 
         .quadrado-submit {
             width: fit-content; /* Ajusta a largura ao conteúdo */
@@ -489,6 +494,71 @@
             font-size: 15px;
             text-align: center;
         }
+
+        /* Estilos para o container principal */
+        .container3 {
+             width: 100%;
+             max-width: 1310px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1A7FBD; /* Cor de fundo para os elementos */
+            color: #000; /* Cor do texto */
+
+    
+}
+
+        /* Estilos para o título dentro do container */
+        .title3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+    
+        }
+
+        #q10, #q11, #q12 {
+            background-color: #fff !important;
+            margin: 10px;
+    
+        }
+
+        #q10 h2, #q11 h2, #q12 h2 {
+            color: #000 !important;
+        }
+
+        .title3 {
+            background-color: #1A7FBD !important;
+            color: #fff !important;
+            }
+
+        /* Estilos para o container dos quadrados */
+        .container3 .quadrados-container3 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+    
+        }
+
+        /* Estilos para cada quadrado */
+        .container3 .quadrado {
+            width: calc(28% - 10px);
+            background-color: #FFF
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para o conteúdo dentro de cada quadrado */
+        .container3 .quadrado h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .container3 .quadrado p {
+            font-size: 16px;
+        }
+
+   
     </style>
 </head>
 </head>
@@ -634,7 +704,7 @@
         </section>
         
     </main>
-
+    
     <div class="container-section" style="background-color: #1A7FBD; margin-left: 100px;">
         <div class="container">
             <img src="../dev.png" alt="Banner" style="width: 450px; height: 350px;">
@@ -710,11 +780,38 @@
         </div>
         <div class="quadrado-submit">
             <p>
-                <input type="submit" value="Quero me cadastrar para o processo seletivo">
+                <button class="transparent-button">
+                    <input type="submit" value="Quero me cadastrar para o processo seletivo">
+                    <img src="../icones/enter.png" alt="enter" style="width: 20px; height: 20px;">
+                </button>
             </p>
         </div>
-
+        
+            
         <p></p>
+
+    <div>
+        
+
+        <div class="container3">
+            <h2 class="title3">Objetivos</h2>
+        
+            <div class="quadrados-container">
+                <div class="quadrado" id="q10">
+                    <h2><strong>Otimizar</strong></h2>
+                    <p>Otimizar todo o processo de contratação chegando a contribuir com uma economia de 40% no processo de recrutamento.</p>
+                </div>
+                <div class="quadrado" id="q11">
+                    <h2><strong>Gerar</strong></h2>
+                    <p>Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou migrar de outras áreas que estejam descontentes.</p>
+                </div>
+                <div class="quadrado" id="q12">
+                    <h2><strong>Filtrar</strong></h2>
+                    <p>Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros estratégicos de negócios.</p>
+                </div>
+            </div>
+        </div>
+        
 
     <footer style="background-color: #000; color: #FFF; padding: 20px; width: 100vw; box-sizing: border-box;">
         <div style="display: flex; align-items: center; justify-content: flex-start;">

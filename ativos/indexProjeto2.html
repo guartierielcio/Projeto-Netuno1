@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index Projeto2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Index Projeto2</title>
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
@@ -123,15 +122,15 @@
         }
 
         footer {
-    background-color: #000;
-    color: #FFF;
-    text-align: center;
-    margin-left: -7px;
-    margin-right: -7px;
-    margin-bottom: -20px;
-    font-size: 30px;
-    width: calc(100% + 14px); 
-}
+            background-color: #000;
+            color: #FFF;
+            text-align: center;
+            margin-left: -7px;
+            margin-right: -7px;
+            margin-bottom: -20px;
+            font-size: 30px;
+            width: calc(100% + 14px); 
+        }
 
         h3{
             font-size:12px;
@@ -558,9 +557,24 @@
         .container3 .quadrado p {
             font-size: 16px;
         }
-
-   
     </style>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('terceiro-form').addEventListener('submit', function(event) {
+            // Impede o envio padrão do formulário
+            event.preventDefault();
+            // Exibe uma mensagem de confirmação ao usuário
+            var confirmacao = confirm("Se você clicar em Ok seu cadastro será enviado e você estará deacordo nossa política de privacidade");
+            
+            if (confirmacao) {
+                window.location.href = 'confirmacao.html'; // Altere para o nome do seu arquivo HTML de confirmação
+            } else {
+                
+            }
+        });
+        });
+    </script>
 </head>
 </head>
 <body>
@@ -573,7 +587,11 @@
                     <li><a href="#">O Problema</a></li>
                     <li><a href="#">Sua Jornada</a></li>
                     <li><a href="#">Objetivos</a></li>
-                    <li><button>Processo Seletivo</button></li>
+                    <button id="processo-seletivo" style="background-color: #000; color: #fff; border-radius: 10px; padding: 5px 35px;">Processo Seletivo</button>
+
+
+
+
                 </ul>
             </nav>
         </h1>
@@ -781,13 +799,11 @@
             </div>
         </div>
         <div class="quadrado-submit">
-            <p>
-                <button class="transparent-button">
-                    <span style="color: #FFF;">Quero me cadastrar para o </span>
+                <button id="quero-participar" class="transparent-button" style="background-color: #000; color: #fff; border-radius: 5px; padding: -5px 20px; height: auto;">
+                    <span>Quero me cadastrar para o </span>
                     <span style="color: #1A7FBD;">processo seletivo</span>
                     <img src="../icones/enter.png" alt="enter" style="width: 20px; height: 20px;">
                 </button>
-                </p>
         </div>
             <p></p>
 
@@ -847,6 +863,30 @@
                 </div>
             </div>
         </footer>
+        <script>
+            //  exibe mensagem de confirmação e abre uma nova aba
+            document.getElementById('terceiro-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                // Exibe a mensagem de confirmação
+                if (confirm('Clicando no botão OK seu Formulário de Cadastro será enviado e automaticamente você estará de acordo com nossa POLITICA DE PRIVACIDADE.')){
+                    // Abre uma nova aba com a página de confirmação
+                    window.open('confirmacao.html', '_blank'); 
+                }
+            });
+
+            // Script para exibir uma mensagem quando o botão "Processo Seletivo" é clicado
+        document.getElementById('processo-seletivo').addEventListener('click', function() {
+            alert('Por favor, preencha o formulário de cadastro antes de acessar o processo seletivo.');
+            event.preventDefault(); // Evita o comportamento padrão do clique do botão
+        });
+
+         // Script para exibir uma mensagem quando o botão "Quero participar do processo seletivo" é clicado
+    document.getElementById('quero-participar').addEventListener('click', function() {
+        alert('Por favor, preencha o formulário de cadastro antes de acessar o processo seletivo.');
+        event.preventDefault(); // Evita o comportamento padrão do clique do botão
+    });
+        </script>
         
 </body>
 </html>

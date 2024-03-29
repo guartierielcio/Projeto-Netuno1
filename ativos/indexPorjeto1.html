@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pROJ1</title>
+    <title>Index_Projeto_Netuno1</title>
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
@@ -888,25 +888,25 @@
                 event.preventDefault();
     
                 // Exibe a mensagem de confirmação
-                if (confirm('Clicando no botão OK seu Formulário de Cadastro será enviado e automaticamente você estará de acordo com nossa POLITICA DE PRIVACIDADE.')){
+                if (confirm('Clicando no botão OK seu Formulário de Cadastro será enviado e automaticamente você estará participando do nosso Processo, estando de acordo com nossa POLITICA DE PRIVACIDADE.')){
                     // Abre uma nova aba com a página de confirmação
                     window.open('confirmacao.html', '_blank'); 
                 }
             });
 
             // Script para exibir uma mensagem quando o botão "Processo Seletivo" é clicado
-        document.getElementById('processo-seletivo').addEventListener('click', function() {
+            document.getElementById('processo-seletivo').addEventListener('click', function() {
             alert('Por favor, preencha o formulário de cadastro antes de acessar o processo seletivo.');
             event.preventDefault(); // Evita o comportamento padrão do clique do botão
         });
 
-         // Script para exibir uma mensagem quando o botão "Quero participar do processo seletivo" é clicado
-         document.getElementById('quero-participar').addEventListener('click', function() {
-    var confirmacao = confirm('Por favor, preencha o formulário de cadastro antes de acessar o processo seletivo.');
-    if (confirmacao === false) {
-        event.preventDefault(); // Evita o comportamento padrão do clique do botão
-    }
-});
+            // Script para exibir uma mensagem quando o botão "Quero participar do processo seletivo" é clicado
+            document.getElementById('quero-participar').addEventListener('click', function() {
+            var confirmacao = confirm('Por favor, preencha o formulário de cadastro antes de acessar o processo seletivo.');
+            if (confirmacao === false) {
+            event.preventDefault(); // Evita o comportamento padrão do clique do botão
+        }
+        });
         </script>
         
 </body>

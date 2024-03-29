@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index Projeto3</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Index Projeto3</title>
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
         
@@ -558,9 +557,24 @@
         .container3 .quadrado p {
             font-size: 16px;
         }
-
-   
     </style>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('terceiro-form').addEventListener('submit', function(event) {
+            // Impede o envio padrão do formulário
+            event.preventDefault();
+            // Exibe uma mensagem de confirmação ao usuário
+            var confirmacao = confirm("Se você clicar em Ok seu cadastro será enviado e você estará deacordo nossa política de privacidade");
+            
+            if (confirmacao) {
+                window.location.href = 'confirmacao.html'; // Altere para o nome do seu arquivo HTML de confirmação
+            } else {
+                
+            }
+        });
+        });
+    </script>
 </head>
 </head>
 <body>
@@ -847,6 +861,18 @@
                 </div>
             </div>
         </footer>
+        <script>
+            //  exibe mensagem de confirmação e abre uma nova aba
+            document.getElementById('terceiro-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                // Exibe a mensagem de confirmação
+                if (confirm('Clicando no botão OK seu Formulário de Cadastro será enviado e automaticamente você estará de acordo com nossa POLITICA DE PRIVACIDADE.')){
+                    // Abre uma nova aba com a página de confirmação
+                    window.open('confirmacao.html', '_blank'); 
+                }
+            });
+        </script>
         
 </body>
 </html>
